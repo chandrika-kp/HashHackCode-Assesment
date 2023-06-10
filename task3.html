@@ -10,8 +10,8 @@
 
 <body>
   <div class="maindiv">
-    <h3>RisK Assesment for Q1 Opportunities</h3>
-    <table id="table">
+    <h1>Task 3</h1>
+    <table id="table" border="1">
 
       <tr>
         <th>Department</th>
@@ -45,36 +45,35 @@
         <td>50% - 100%</td>
       </tr>
 
-
       <tr>
-        <td style="background-color: rgb(157, 241, 234);" rowspan="3">Sales</td>
-        <td style="background-color:rgb(157, 241, 234);">$20 K</td>
-        <td style="background-color:rgb(157, 241, 234);">50% - 100%</td>
+        <td id="secondrow" rowspan="3">Sales</td>
+        <td id="secondrow">$20 K</td>
+        <td id="secondrow">50% - 100%</td>
+      </tr>
+      <tr >
+        <td id="secondrow">$20 K</td>
+        <td id="secondrow">>25%</td>
       </tr>
       <tr>
-        <td style="background-color:rgb(157, 241, 234);">$20 K</td>
-        <td style="background-color:rgb(157, 241, 234);">>25%</td>
+        <td id="secondrow">$50 K</td>
+        <td id="secondrow">25% - 50%</td>
       </tr>
       <tr>
-        <td style="background-color:rgb(157, 241, 234);">$50 K</td>
-        <td style="background-color:rgb(157, 241, 234);">25% - 50%</td>
+        <td id="thirdrow" rowspan="4">Product</td>
+        <td id="thirdrow">$30 K</td>
+        <td id="thirdrow">>25%</td>
       </tr>
       <tr>
-        <td rowspan="4" style="background-color:rgb(238, 135, 204);">Product</td>
-        <td style="background-color:rgb(238, 135, 204);">$30 K</td>
-        <td style="background-color:rgb(238, 135, 204);">>25%</td>
+        <td id="thirdrow">$40 K</td>
+        <td id="thirdrow">50% - 100%</td>
       </tr>
       <tr>
-        <td style="background-color:rgb(238, 135, 204);">$40 K</td>
-        <td style="background-color:rgb(238, 135, 204);">50% - 100%</td>
+        <td id="thirdrow">$40 K</td>
+        <td id="thirdrow">25% - 50%</td>
       </tr>
       <tr>
-        <td style="background-color:rgb(238, 135, 204);">$40 K</td>
-        <td style="background-color:rgb(238, 135, 204);">25% - 50%</td>
-      </tr>
-      <tr>
-        <td style="background-color:rgb(238, 135, 204);">$70 K</td>
-        <td style="background-color:rgb(238, 135, 204);">25% - 50%</td>
+        <td id="thirdrow">$70 K</td>
+        <td id="thirdrow">25% - 50%</td>
       </tr>
     </table>
   </div>
@@ -112,8 +111,17 @@
     }
 
     table td {
-      background-color: rgba(87, 173, 238, 0.888);
       color: black;
+    }
+
+    table tr:nth-child(n) td:nth-child(n) {
+      background-color: rgba(87, 173, 238, 0.888);
+    }
+    #secondrow {
+      background-color:rgb(157, 241, 234);
+    }
+    #thirdrow{
+      background-color:rgb(238, 135, 204);
     }
   </style>
 </body>
